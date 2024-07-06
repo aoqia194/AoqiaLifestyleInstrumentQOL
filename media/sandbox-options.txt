@@ -4,7 +4,7 @@ option AoqiaLifestyleInstrumentQOL.AttachmentType
 {
     type = enum,
     numValues = 9,
-    default = 5,
+    default = 8,
     page = AoqiaLifestyleInstrumentQOL,
     translation = AoqiaLifestyleInstrumentQOL_AttachmentType,
     valueTranslation = AoqiaLifestyleInstrumentQOL_AttachmentTypes,
