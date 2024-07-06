@@ -1,0 +1,15 @@
+Sandbox_EN = {
+    Sandbox_AoqiaLifestyleInstrumentQOL = "Aoqia Lifestyle QOL",
+
+    Sandbox_AoqiaLifestyleInstrumentQOL_AttachmentType = "Attachment Type",
+    Sandbox_AoqiaLifestyleInstrumentQOL_AttachmentType_tooltip = "The attachment type for all the instruments.",
+    Sandbox_AoqiaLifestyleInstrumentQOL_AttachmentTypes_option1 = "BigWeapon",
+    Sandbox_AoqiaLifestyleInstrumentQOL_AttachmentTypes_option2 = "BigBlade",
+    Sandbox_AoqiaLifestyleInstrumentQOL_AttachmentTypes_option3 = "Racket",
+    Sandbox_AoqiaLifestyleInstrumentQOL_AttachmentTypes_option4 = "Shovel",
+    Sandbox_AoqiaLifestyleInstrumentQOL_AttachmentTypes_option5 = "Guitar",
+    Sandbox_AoqiaLifestyleInstrumentQOL_AttachmentTypes_option6 = "GuitarAcoustic",
+    Sandbox_AoqiaLifestyleInstrumentQOL_AttachmentTypes_option7 = "Pan",
+    Sandbox_AoqiaLifestyleInstrumentQOL_AttachmentTypes_option8 = "Rifle",
+    Sandbox_AoqiaLifestyleInstrumentQOL_AttachmentTypes_option9 = "Saucepan",
+}

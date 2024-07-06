@@ -1,0 +1,7 @@
+name=aoqia's lifestyle instrument QOL
+id=AoqiaLifestyleInstrumentQOL
+description=This is a small QOL mod for Lifestyle that lets you put certain instruments on your back or on slings.
+poster=poster.png
+require=AoqiaZomboidUtils,Lifestyle
+versionMin=41.78.16
+modVersion=1.0.0
