@@ -12,14 +12,50 @@ local logger = mod_constants.LOGGER
 
 local tweaks = {}
 
+tweaks.attachment_types = {
+    "BigWeapon",
+    "BigBlade",
+    "Racket",
+    "Shovel",
+    "Guitar",
+    "GuitarAcoustic",
+    "Pan",
+    "Rifle",
+    "Saucepan"
+}
+
 function tweaks.init()
     logger:debug("Applying tweaks...")
 
-    local tweak_table = {
-        ["Base.Banjo"] = {
-            ["AttachmentType"] = SandboxVars.AttachmentType,
-        },
+    local sb_opts = SandboxVars[mod_constants.MOD_ID]
+    if sb_opts == nil then
+        logger:error("Failed to laod sandbox options..")
+        return
+    end
+
+    local attachment_type = tweaks.attachment_types[sb_opts.AttachmentType]
+
+    local instruments = {
+        "Base.Banjo",
+        "Base.GuitarAcoustic",
+        "Base.GuitarElectricBassBlack",
+        "Base.GuitarElectricBassBlue",
+        "Base.GuitarElectricBassRed",
+        "Base.GuitarElectricBlack",
+        "Base.GuitarElectricBlue",
+        "Base.GuitarElectricRed",
+        "Base.Keytar",
+        "Base.Saxaphone",
+        "Base.Trumpet",
+        "Base.Violin"
     }
+
+    local tweak_table = {}
+    for _, item_id in ipairs(instruments) do
+        tweak_table[item_id] = {
+            ["AttachmentType"] = attachment_type
+        }
+    end
 
     local script_manager = getScriptManager()
     for item, data in pairs(tweak_table) do
